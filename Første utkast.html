@@ -45,7 +45,7 @@
         width: 816px;
         margin-left: auto;
         margin-right: auto;
-        
+        color: #595959;
     }
 
     .center{
@@ -53,16 +53,35 @@
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+        z-index: 0;
     }
     
 
     #dame_bilde{
         position: relative;
+        top: 0px;
         width: 816px;
     }
     #mann_bilde{
         position: relative;
+        bottom: 0px;
         width: 816px;
+    }
+
+    #logo_medie{
+        width: 32%;
+        height: auto;
+        position:absolute;
+        bottom: 16px;
+        left: 42px;
+    }
+
+    #logo_DSB{
+        width: 28%;
+        height: auto;
+        position:absolute;
+        bottom: 45px;
+        right: 65px;
     }
 
     #foto_text{
@@ -124,7 +143,7 @@
     clear: both;
 }
 h3{
-    font-weight: bold;
+    font-family: "MercuryTextG1 - Bold";
 }
 </style>
 <!--gaming-->
@@ -261,6 +280,8 @@ h3{
     <div id="mann_bilde">
         <img src="datamaskin_mann_ny.png" alt="Fokusert mann foran datamaskin" class="center">
         <p id="foto_text">Foto: Johnér</p>
+        <img src="Medietilsynet_logo_ny.png" alt="Medietilsynets logo" id="logo_medie">
+        <img src="dsb_hvitlogo.png" alt="DSB's logo" id="logo_DSB">
     </div>
 </body>
 </html>
