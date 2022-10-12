@@ -8,7 +8,7 @@
 </head>
 
 <style>
-
+    /*Fonts vi bruker*/
     @font-face {
         font-family: 'Archer-Bold';
         src: url(Archer\ Bold.otf);
@@ -38,6 +38,7 @@
         src: url(Mercury\ Text\ G1\ Semibold\ Italic.otf);
         }
 
+        /*bestemmer utsteende på siden, størrelse, og hvordan skriften skal se ut*/
     body{
         background-color: rgb(234,234,234);
         margin: 0px;
@@ -46,14 +47,12 @@
         margin-left: auto;
         margin-right: auto;
         color: #4f4f4f;
+        font-family: "MercuryTextG1 - Roman";
     }
 
+    /*får bildene til å ta opp hele siden*/
     .center{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
         width: 100%;
-        z-index: 0;
     }
     
 
@@ -144,13 +143,23 @@
 }
 h3{
     font-family: "MercuryTextG1 - Bold";
+    font-size: 105%;
 }
-h2{
+h2.innledning{
     font-family: "Archer-Book";
+    font-size: 140%;
+    margin-left: 100px;
+    margin-right: 80px;
+}
+h2.tips{
+    font-family: "Archer-Bold";
+    font-size: 220%;
+    margin-bottom: 0;
+}
 hr.solid{
     border-top: 1px solid black;
     margin-left: 100px;
-    margin-right: 70px;
+    margin-right: 30px;
 }
 </style>
 <!--gaming-->
@@ -166,7 +175,7 @@ hr.solid{
     <div class="box green en"></div>
     
     
-    <h2 style="margin-left: 100px">Å lære seg å avsløre falske nyheter er en effektiv vaksine mot å bli
+    <h2 class="innledning">Å lære seg å avsløre falske nyheter er en effektiv vaksine mot å bli
         lurt, eller å komme i fare for å lure andre. Dette er spesielt viktig i
         en krise som den vi er inne i nå.</h2>
    
@@ -217,7 +226,7 @@ hr.solid{
     
 
     
-    <h2 style="margin-left: 100px">Tips for å avsløre falske nyheter</h2>
+    <h2 style="margin-left: 100px" class="tips">Tips for å avsløre falske nyheter</h2>
     <hr class="solid">
     
 
