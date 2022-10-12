@@ -55,7 +55,7 @@
         width: 100%;
     }
     
-
+    /*plasserer bildene*/
     #dame_bilde{
         position: relative;
         top: 0px;
@@ -67,6 +67,7 @@
         width: 816px;
     }
 
+    /*plasserer og justerer størrelse på logoene*/
     #logo_medie{
         width: 32%;
         height: auto;
@@ -74,7 +75,6 @@
         bottom: 16px;
         left: 42px;
     }
-
     #logo_DSB{
         width: 28%;
         height: auto;
@@ -83,6 +83,7 @@
         right: 65px;
     }
 
+    /*vannmerke til bildene*/
     #foto_text{
         position: absolute;
         top: 40px;
@@ -94,9 +95,10 @@
 
     }
 
+    /*tekst over første bilde, med overskrit*/
     #fakta{
         position: absolute;
-        top: 10px;
+        top: 25px;
         left: 30px;
         font-family: "Archer-Bold";
         font-size: 125%;
@@ -112,68 +114,72 @@
     
     }
 
+    /*styler teksten nederst*/
     .bunn{
         font-family: "MercuryTextG1 - Semibold Italic";
         text-align: right;
         margin-right: 100px;
     }
     
-.box {
-  height: 470px;
-  width: 55px;
-  position: absolute;
-}
+    /*lager og plasserer de grønne boksene*/
+    .box {
+    height: 470px;
+    width: 55px;
+    position: absolute;
+    background-color: #2caa80;
+    }
+    .en {
+        top: 450px;
+    }
+    .to {
+        top: 1550px;
+    }
 
-.green {
-  background-color: #2caa80;
-}
-.en {
-    
-    top: 450px;
+    /*lager rader og kolonner for teksten*/
+    .column{
+        float: left;
+        width: 290px;
+        padding: 5px;  
+        margin-right: 10px;
+    }
+    .row{
+        content: "";
+        display: table;
+        clear: both;
+    }
 
-}
-.to {
-    top: 1550px;
-}
+    /*styler tekst og overskrifter, og gir dem riktig font*/
+    h3{
+        font-family: "MercuryTextG1 - Bold";
+        font-size: 100%;
+        margin-bottom: 0;
+    }
+    h2.innledning{
+        font-family: "Archer-Book";
+        font-size: 130%;
+        margin-left: 100px;
+        margin-right: 125px;
+        margin-bottom: 40px;
+    }
+    h2.tips{
+        font-family: "Archer-Bold";
+        font-size: 220%;
+        margin-bottom: 0;
+    }
+    p{
+        margin-top: 0px;
+    }
 
-.column{
-    float: left;
-    width: 290px;
-    padding: 5px;    
-    
-}
-.row{
-    content: "";
-    display: table;
-    clear: both;
-}
-h3{
-    font-family: "MercuryTextG1 - Bold";
-    font-size: 105%;
-    margin-bottom: 0;
-}
-h2.innledning{
-    font-family: "Archer-Book";
-    font-size: 140%;
-    margin-left: 100px;
-    margin-right: 80px;
-}
-h2.tips{
-    font-family: "Archer-Bold";
-    font-size: 220%;
-    margin-bottom: 0;
-}
-p{
-    margin-top: 0px;
-}
-hr.solid{
-    border-top: 1px solid black;
-    margin-left: 100px;
-    margin-right: 30px;
-}
+    /*lager en strek*/
+    hr.solid{
+        border-top: 1px solid black;
+        margin-left: 100px;
+        margin-right: 30px;
+    }
 </style>
-<!--gaming-->
+
 <body>
+    <!--første bilde med overskrift-->
     <div id="dame_bilde">
         <img src="datamaskin_dame_ny.png" alt="Grublende dame foran datamaskin" class="center">
         <p id="foto_text">Foto: Johnér</p>
@@ -182,18 +188,18 @@ hr.solid{
         <br>
     </div>
 
-    <div class="box green en"></div>
-    
+<!--grønn boks og innledning-->
+    <div class="box en"></div>
     
     <h2 class="innledning">Å lære seg å avsløre falske nyheter er en effektiv vaksine mot å bli
         lurt, eller å komme i fare for å lure andre. Dette er spesielt viktig i
         en krise som den vi er inne i nå.</h2>
    
-    
-    
+<!--første del av teksten-->        
     <div class="row">
+        <!--venstre kolonne-->
         <div class="column" style="margin-left: 100px;">
-            <h3>Hva er falske nyheter?</h3>
+            <h3 style="margin-top: 0;">Hva er falske nyheter?</h3>
             <p>
                 En falsk nyhet er en nyhetslignende sak som
                 fremstår som ekte, men som helt eller delvis
@@ -212,6 +218,8 @@ hr.solid{
                 en styrke i krisesituasjoner, men den kan også
             </p>
         </div>
+        
+        <!--høyre kolonne-->
         <div class="column" style="margin-right: 100px;">
             <p>
                 utnyttes av de som har en egeninteresse av å
@@ -220,7 +228,7 @@ hr.solid{
             <p>
                 Falske nyheter kan i verste fall forsterke en
                 pågående krise og føre til at du handler i strid
-                med viktige sikkerhetsråd – uten å ville det.
+                med viktige sikkerhetsråd - uten å ville det.
                 Et eksempel på en slik falsk nyhet kan være
                 oppfordringer til å hamstre mat eller andre
                 varer.
@@ -234,13 +242,13 @@ hr.solid{
         </div>
     </div>
     
-
-    
+<!--underoverskrift og strek-->
     <h2 style="margin-left: 100px" class="tips">Tips for å avsløre falske nyheter</h2>
     <hr class="solid">
     
-
+<!--andre del av teksten-->
     <div class="row">
+        <!--venstre-->
         <div class="column" style="margin-left: 100px;">
             <h3>Virker saken for utrolig?</h3>
             <p>
@@ -252,7 +260,7 @@ hr.solid{
             <h3>Hvem står bak?</h3>
             
             <p>
-                Er du i tvil – undersøk kilden. Både hvem
+                Er du i tvil - undersøk kilden. Både hvem
                 som har skrevet saken, og hva det står
                 i nettadressen (url). Falske nyheter har
                 ofte en nettadresse som likner på en kjent
@@ -275,6 +283,8 @@ hr.solid{
                 kommenterer eller deler.
             </p>
         </div>
+
+        <!--høyre-->
         <div class="column" style="margin-right: 100px;">
             <h3>Tror du på bilder?</h3>
             <p>
@@ -308,16 +318,17 @@ hr.solid{
         </div>
     </div>
     
+    <!--nederste tekst-->
     <p class="bunn">Du er en del av Norges beredskap <br>
-        – også mot falske nyheter.</p>
+        - også mot falske nyheter.</p>
     
-
+<!--nederste bilde med logoer, og grønn boks-->
     <div id="mann_bilde">
         <img src="datamaskin_mann_ny.png" alt="Fokusert mann foran datamaskin" class="center">
         <p id="foto_text">Foto: Johnér</p>
         <img src="Medietilsynet_logo_ny.png" alt="Medietilsynets logo" id="logo_medie">
         <img src="dsb_hvitlogo.png" alt="DSB's logo" id="logo_DSB">
     </div>
-    <div class="box green to"></div>
+    <div class="box to"></div>
 </body>
 </html>
