@@ -55,13 +55,17 @@
         width: 100%;
     }
     
-/*
+
     #dame_bilde{
         position: relative;
-        text-align: center;
+        width: 816px;
     }
-*/
-    #topfoto_text{
+    #mann_bilde{
+        position: relative;
+        width: 816px;
+    }
+
+    #foto_text{
         color: #595959;
         position: absolute;
         top: 40px;
@@ -71,17 +75,6 @@
         transform: rotate(-90deg);
         margin:0;
 
-    }
-
-    #bunnfoto_text{
-        color: #595959;
-        position: absolute;
-        top: 80%;
-        right: -15px;
-        font-family: "Archer-Semibold";
-        font-size:small;
-        transform: rotate(-90deg);
-        margin:0;
     }
 
     #fakta{
@@ -94,17 +87,19 @@
     #dame_bilde > h1{
         color: rgb(234,234,234);
         position: absolute;
-        top: 410px;
+        top: 440px;
         left: 80px;
         font-size: 75px;
-        font-family: "Archer-Bold";
+        font-family: "Archer-Semibold";
+        width: 80%;
+    
     }
 </style>
 <!--gaming-->
 <body>
     <div id="dame_bilde">
         <img src="datamaskin_dame_ny.png" alt="Grublende dame foran datamaskin" class="center">
-        <p id="topfoto_text">Foto: Johnér</p>
+        <p id="foto_text">Foto: Johnér</p>
         <p id="fakta">DSB FAKTA</p>
         <h1>Slik avslører du falske nyheter</h1>
     </div>
@@ -121,7 +116,7 @@
 
     <div id="mann_bilde">
         <img src="datamaskin_mann_ny.png" alt="Fokusert mann foran datamaskin" class="center">
-        <p id="bunnfoto_text">Foto: Johnér</p>
+        <p id="foto_text">Foto: Johnér</p>
     </div>
 </body>
 </html>
